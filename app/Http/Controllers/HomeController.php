@@ -13,11 +13,17 @@ class HomeController extends Controller
 
     public function about()
     {
-        return view('front.about');
+        return redirect()->route('contact');
+//        return Redirect::route('contact');
+//        return redirect(route('contact'));
     }
 
     public function contact()
     {
         return view('front.contact');
+    }
+    public function user(Request $request)
+    {
+        dd($request->all());
     }
 }
