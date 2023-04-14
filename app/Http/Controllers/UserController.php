@@ -26,9 +26,8 @@ class UserController extends Controller
         dd($request->all());
     }
 
-    public function showName(Request $request, $fullName)
+    public function nameShow(Request $request)
     {
-        $fullName = $request->input('fullName');
-        dd($fullName);
+        dd($request->all());
     }
 }

@@ -130,7 +130,7 @@
 {{--    </form>--}}
 
     <hr>
-    <form action="{{route('showName',['fullName' => 'vakif'])}}" method="POST" class="mx-5">
+    <form action="{{route('nameShow')}}" method="POST" class="mx-5">
         where tanımları kullanımı
         <hr>
         @csrf
