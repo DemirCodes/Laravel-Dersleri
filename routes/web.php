@@ -42,7 +42,6 @@ Route::prefix('users')->group(function (){
 });
 /******************** UserController End  ****************/
 
-
 /******************** UserController Start  ****************/
 Route::prefix('support')->group(function (){
     Route::match(['get','post'],'/support-form-controller',[SupportController::class,'support'])->name('support-form');
