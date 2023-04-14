@@ -7,7 +7,7 @@
     <form action="" method="post">
         @csrf
         @method('post')
-        @dmrMethod('Vakıf Demirci')
+{{--        @dmrMethod('Vakıf Demirci')--}}
         <input type="text" name="fullName" value=""><br>
         <button type="submit">Gönder</button>
     </form>

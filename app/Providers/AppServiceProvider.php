@@ -21,7 +21,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Blade::directive("dmrMethod",function ($value = null){
+            $value = str_replace('"','',$value);
+            $value = str_replace("'",'',$value);
             dd($value);
         });
     }
 }
+
+
