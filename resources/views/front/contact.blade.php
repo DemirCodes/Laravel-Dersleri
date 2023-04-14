@@ -1,4 +1,4 @@
-@extends('front.front')
+@extends('front')
 @section('css')
 @endsection
 
@@ -105,29 +105,29 @@
         <button type="submit" class="btn btn-outline-secondary">Submit</button>
     </form>
     <hr>
-{{--    <form action="{{route('delete')}}" method="POST" class="mx-5">--}}
-{{--        Method deneme delete--}}
-{{--        <hr>--}}
-{{--        @csrf--}}
-{{--        @method('delete')--}}
-{{--        <div class="mb-3">--}}
-{{--            <label for="fullName" class="form-label">Full Name address</label>--}}
-{{--            <input type="text" id="fullName" name="fullName" placeholder="Please enter your Full Name ..."--}}
-{{--                   class="form-control @error('fullName') is-invalid @enderror">--}}
-{{--            @error('fullName')--}}
-{{--            <p class="alert alert-danger">{{$message}}</p>--}}
-{{--            @enderror--}}
-{{--        </div>--}}
-{{--        <div class="mb-3">--}}
-{{--            <label for="password" class="form-label">Password</label>--}}
-{{--            <input type="password" id="password" name="password" placeholder="Please enter your name ..."--}}
-{{--                   class="form-control @error('password') is-invalid @enderror">--}}
-{{--            @error('password')--}}
-{{--            <p class="alert alert-danger">{{$message}}</p>--}}
-{{--            @enderror--}}
-{{--        </div>--}}
-{{--        <button type="submit" class="btn btn-outline-secondary">Submit</button>--}}
-{{--    </form>--}}
+    <form action="{{route('delete')}}" method="POST" class="mx-5">
+        Method deneme delete
+        <hr>
+        @csrf
+        @method('delete')
+        <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name address</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Please enter your Full Name ..."
+                   class="form-control @error('fullName') is-invalid @enderror">
+            @error('fullName')
+            <p class="alert alert-danger">{{$message}}</p>
+            @enderror
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" placeholder="Please enter your name ..."
+                   class="form-control @error('password') is-invalid @enderror">
+            @error('password')
+            <p class="alert alert-danger">{{$message}}</p>
+            @enderror
+        </div>
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+    </form>
 
     <hr>
     <form action="{{route('nameShow')}}" method="POST" class="mx-5">

@@ -8,7 +8,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('front.front');
+        $age = 25;
+        return view('front.index')->with('age',$age)->with('dmrcode','Vakif');
+//        return view('front.index',['age'=>$age]);
+//        return view('front.index',compact('age'));
+
     }
 
     public function about()

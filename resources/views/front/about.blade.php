@@ -1,4 +1,4 @@
-@extends('front.front')
+@extends('front')
 @section('css')
 @endsection
 
